@@ -66,8 +66,21 @@ if(document.title == "saver"){
         }else if (e.target.classList.contains("edit")){
             showUpdateData(e.target.closest('tr').getAttribute("id"))
             editingId = e.target.closest('tr').getAttribute("id")
-            e.target.innerHTML = ' جاري التعديل ...' 
-            
+            e.target.innerHTML = `
+                <!-- From Uiverse.io by Donewenfu --> 
+                <!-- From Uiverse.io by abrahamcalsin --> 
+
+                        جاري التعديل<div class="dot-spinner">
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                    </div>
+            ` 
         }
     });
         // clear inputs
@@ -295,7 +308,22 @@ else if(document.title == "Expenses"){
         }else if(e.target.classList.contains("edit")){
             showupdateData(e.target.closest('tr').getAttribute("id"));
             editeId = e.target.closest('tr').getAttribute("id");
-            e.target.innerHTML='جاري التعديل ...';
+            e.target.innerHTML = `
+                <!-- From Uiverse.io by Donewenfu --> 
+                <!-- From Uiverse.io by abrahamcalsin --> 
+                جاري التعديل
+                <div class="dot-spinner">
+                    <div class="dot-spinner__dot"></div>
+                    <div class="dot-spinner__dot"></div>
+                    <div class="dot-spinner__dot"></div>
+                    <div class="dot-spinner__dot"></div>
+                    <div class="dot-spinner__dot"></div>
+                    <div class="dot-spinner__dot"></div>
+                    <div class="dot-spinner__dot"></div>
+                    <div class="dot-spinner__dot"></div>
+            </div>
+            `
+            ;
         }
         
     });
